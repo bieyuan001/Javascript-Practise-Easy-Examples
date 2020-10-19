@@ -9,7 +9,8 @@
   - Color RGB Picker
   - Fresh Change Background  Random Colors
   - Playing Progress
-    - Progress Auto 100% 
+    - Progress Auto 100%
+  - Simple Calculators Numbers Sum
   - Slider Practise
   - Word Counter and Change Random Colors
     - Limit Input Word Numbers
