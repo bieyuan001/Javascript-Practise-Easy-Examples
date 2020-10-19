@@ -10,6 +10,7 @@
   - Word Counter and Change Random Colors
     - Limit Input Word Numbers
   - Color RGB Picker
+  - Playing Progress
 #### Here are some websites to practise JS examples
   - [Edabit](https://edabit.com/)
 #### Here are some apps to learn Javascript quickly
