@@ -6,11 +6,11 @@
   - [Javascript](https://www.javascript.com/)
   - [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 #### Here are some examples to help you learn Javascript
+  - Color RGB Picker
+  - Playing Progress
   - Slider Practise
   - Word Counter and Change Random Colors
     - Limit Input Word Numbers
-  - Color RGB Picker
-  - Playing Progress
   - Word Move Timer
 #### Here are some websites to practise JS examples
   - [Edabit](https://edabit.com/)
