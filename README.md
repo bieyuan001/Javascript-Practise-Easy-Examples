@@ -11,6 +11,7 @@
     - Limit Input Word Numbers
   - Color RGB Picker
   - Playing Progress
+  - Word Move Timer
 #### Here are some websites to practise JS examples
   - [Edabit](https://edabit.com/)
 #### Here are some apps to learn Javascript quickly
