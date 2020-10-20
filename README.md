@@ -8,8 +8,9 @@
 #### Here are some examples to help you learn Javascript
   - 9x9 List
   - Color RGB Picker
-  - How Many Days This Month
   - Fresh Change Background  Random Colors
+  - How Many Days This Month
+  - Input Text and Return
   - Playing Progress
     - Progress Auto 100%
   - Simple Calculators Numbers Sum
