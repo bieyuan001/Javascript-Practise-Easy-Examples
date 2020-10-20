@@ -39,6 +39,13 @@ body{
 </body>
 <script>
 var getTop = document.getElementById("top");
+window.onscroll = function(){
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    getTop.style.display = "block";
+  } else {
+    getTop.style.display = "none";
+  }
+}
 getTop.addEventListener("click", function(){
 	document.body.scrollTop = 0;//Safari to use.
 	document.documentElement.scrollTop = 0;//Chrome, Firefox, Internet Explore and Opra.
