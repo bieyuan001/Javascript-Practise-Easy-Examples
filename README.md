@@ -7,6 +7,7 @@
   - [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 #### Here are some examples to help you learn Javascript
   - Color RGB Picker
+  - How Many Days This Month
   - Fresh Change Background  Random Colors
   - Playing Progress
     - Progress Auto 100%
