@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>9x9 list</title>
+<style>
+body{
+	margin:0;
+	text-align: center;
+	}
+div span {
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #0000ff;
+    font: 12px/30px "Microsoft Yahei";
+    vertical-align: middle;
+}
+</style>
+</head>
+<body>
+<h1>9x9 list</h1>
+<div></div>
+</body>
+<script>
+	var str = '';
+	var div = document.querySelector('div');
+	for(var i=0;i<9;i++){
+			for(var j=0;j<i+1;j++){
+				str +=  `<span>${j+1}*${i+1}=${(j+1)*(i+1)}</span>`;
+			}
+			str +='<br/>';
+		}
+		div.innerHTML = str;
+	</script>
+</html>

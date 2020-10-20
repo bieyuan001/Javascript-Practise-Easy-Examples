@@ -6,6 +6,7 @@
   - [Javascript](https://www.javascript.com/)
   - [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 #### Here are some examples to help you learn Javascript
+  - 9x9 List
   - Color RGB Picker
   - How Many Days This Month
   - Fresh Change Background  Random Colors
