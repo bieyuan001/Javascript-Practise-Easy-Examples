@@ -8,6 +8,7 @@
 #### Here are some examples to help you learn Javascript
   - 9x9 List
   - Back To Top
+  - Change BackgroundColor One by One
   - Color RGB Picker
   - Fresh Change Background  Random Colors
   - Message Emulator
