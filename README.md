@@ -10,6 +10,7 @@
   - Back To Top
   - Color RGB Picker
   - Fresh Change Background  Random Colors
+  - Message Emulator
   - How Many Days This Month
   - Input Text and Return
   - Playing Progress

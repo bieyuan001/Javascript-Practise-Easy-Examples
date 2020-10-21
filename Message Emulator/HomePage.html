@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Message Emulator</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+}
+#sms {
+    width: 500px;
+    height: 300px;
+    margin: 50px auto 0;
+}
+#content {
+    height: 260px;
+    overflow: auto;
+    border: 1px solid #000000;
+}
+label {
+    display: grid;
+}
+#hover {
+    border: 1px solid deeppink;
+    cursor: pointer;
+}
+</style>
+<script>
+        window.onload = function(){
+            var oCon = document.getElementById('content');
+            var oTxt = document.getElementById('text');
+            var oBut = document.getElementById('but');
+            var oImg = document.getElementById('img');
+            oBut.onclick = function(){
+                oCon.innerHTML += oImg.innerHTML +  oTxt.value + '<br/>';
+                oTxt.value = '';
+				if(oImg.innerHTML==="User1:"){
+					oImg.innerHTML="User2:"
+				}else{
+					oImg.innerHTML="User1:"
+				}
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+<div id="sms">
+  <div id="content"></div>
+  <p id="img">User1:</p>
+  <label>
+    <input id="text" type="text" />
+    <input id="but" type="button" value="Go">
+  </label>
+</div>
+</body>
+</html>
