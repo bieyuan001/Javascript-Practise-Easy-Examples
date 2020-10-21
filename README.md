@@ -26,3 +26,5 @@
   - [Edabit](https://edabit.com/)
 #### Here are some apps to learn Javascript quickly
   - [Grasshopper app](https://grasshopper.app/)
+#### Here are some books to learn advanced Javascript
+  - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/)
