@@ -15,6 +15,7 @@
   - Input Text and Return
   - Playing Progress
     - Progress Auto 100%
+  - Select Friends List
   - Simple Calculators Numbers Sum
   - Slider Practise
   - Word Counter and Change Random Colors
