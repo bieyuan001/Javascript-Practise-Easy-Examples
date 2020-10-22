@@ -12,8 +12,9 @@
   - Back To Top
   - Change BackgroundColor One by One
   - Color RGB Picker
-  - Fresh Change Background  Random Colors
+  - Fresh Change Background Random Colors
   - Message Emulator
+  - How Long A Number Is
   - How Many Days This Month
   - Input Text and Return
   - Playing Progress

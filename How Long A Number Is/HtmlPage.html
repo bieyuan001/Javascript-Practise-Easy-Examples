@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Input Number Print Length</title>
+<style>
+.sum {
+    width: 600px;
+    height: auto;
+    margin: 20px auto 0;
+    color: #000;
+    font: normal 13px/13px Arial;
+	text-align: center;
+}
+.sum input {
+    width: 70px;
+    height: auto;
+    display: inline-block;
+}
+</style>
+</head>
+<body>
+<div class="sum">
+  <input id="conText" type="text" />
+  <button>Return Number Length</button>
+  <ol>
+	  <li>You should input at least one number</li>
+	  <li>Duable click input content you can get a random number</li>
+	  <li>You can get result when you click this button</li>
+  </ol>
+</div>
+</body>
+<script>
+        var getInput = document.getElementById("conText");
+        var getBtn = document.getElementsByTagName("button");
+		getInput.onkeyup = function () {
+        this.value=this.value.replace(/[\D]/,"");
+		}
+		getInput.ondblclick = function () {
+        this.value=(Math.round(Math.random()*Math.random()*10000)).toString();
+		}
+		getBtn[0].addEventListener("click",function(){
+			getInput.value.length===0? alert("You should input at least one number") : alert("You inputed number length is " + getInput.value.length);
+		})
+</script>
+</html>
