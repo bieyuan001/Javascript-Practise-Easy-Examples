@@ -5,7 +5,7 @@
   - [W3schools](https://www.w3schools.com/)
   - [Javascript](https://www.javascript.com/)
   - [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-  - [Runboo](https://www.runoob.com/) Chinese Version
+  - [Runboo](https://www.runoob.com/) *Chinese Version*
 #### Here are some examples to help you learn Javascript
   - 9x9 List
   - Back To Top
