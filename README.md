@@ -26,6 +26,7 @@
   - Word Move Timer
 #### Here are some websites to practise JS examples
   - [Edabit](https://edabit.com/)
+  - [LeetCode](https://leetcode.com/)
 #### Here are some apps to learn Javascript quickly
   - [Grasshopper app](https://grasshopper.app/)
 #### Here are some books to learn advanced Javascript
