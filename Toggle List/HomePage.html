@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Toggle List</title>
+</head>
+
+<style>
+.accordion {
+    background-color: #ff8800;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+	border-bottom:1px solid #000000;
+}
+.accordion:hover {
+    background-color: #991100;
+}
+.panel {
+    padding: 0 18px;
+    background-color: #eee;
+    display: none;
+    overflow: hidden;
+	border:1px solid #000000;
+}
+</style>
+<body>
+<button class="accordion">Title1</button>
+<div class="panel">
+  <ul>
+  <li>You're a beautiful girl</li>
+  <li>You're a ugly girl</li>
+  </ul>
+</div>
+<button class="accordion">Title2</button>
+<div class="panel">
+  <p>You're a handsome boy.</p>
+</div>
+<button class="accordion">Title3</button>
+<div class="panel">
+  <p>Son of a bitch!</p>
+</div>
+</body>
+<script>
+	var toClick = document.getElementsByClassName("accordion");
+	var toPanel = document.getElementsByClassName("panel");
+	for(i=0; i<toClick.length; i++){
+		toClick[i].addEventListener("click", function(){
+			var panel = this.nextElementSibling;
+    		panel.style.display === "block" ? panel.style.display = "none" : panel.style.display = "block";
+		})
+	}
+</script>
+</html>
