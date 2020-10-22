@@ -1,4 +1,4 @@
-# JS-Practise-Easy-Examples
+# Javascript-Practise-Easy-Examples
 #### Here are some websites to learn Javascript basic
   - [RegExr](https://regexr.com/)
   - [SoloLearn](https://www.sololearn.com/)
@@ -25,10 +25,14 @@
   - Word Counter and Change Random Colors
     - Limit Input Word Numbers
   - Word Move Timer
-#### Here are some websites to practise JS examples
+#### Here are some websites to practise Javascript examples
   - [Edabit](https://edabit.com/)
   - [LeetCode](https://leetcode.com/)
 #### Here are some apps to learn Javascript quickly
   - [Grasshopper app](https://grasshopper.app/)
+#### Here are some apps to your smartphones to run Javascript
+  - [AutoJS](https://github.com/hyb1996/Auto.js) ***Android***
+  - [JSBox](https://apps.apple.com/us/app/id1312014438) ***iOS***
+  - [Scriptable](https://scriptable.app/) ***iOS***
 #### Here are some books to learn advanced Javascript
   - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/)
