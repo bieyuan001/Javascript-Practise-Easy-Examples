@@ -22,6 +22,7 @@
     - Progress Auto 100%
   - Select Friends List
   - Simple Calculators Numbers Sum
+  - Slider Auto Show
   - Slider Practise
   - Toggle Tab
   - Toggle List

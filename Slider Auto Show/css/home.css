@@ -1,0 +1,6 @@
+@charset "utf-8";
+.slideshow-box {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
