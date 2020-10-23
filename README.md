@@ -22,6 +22,7 @@
   - Select Friends List
   - Simple Calculators Numbers Sum
   - Slider Practise
+  - Toggle Tab
   - Toggle List
   - Word Counter and Change Random Colors
     - Limit Input Word Numbers
