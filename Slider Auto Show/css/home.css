@@ -4,3 +4,6 @@
   position: relative;
   margin: auto;
 }
+.slider{
+	display: none;
+}
