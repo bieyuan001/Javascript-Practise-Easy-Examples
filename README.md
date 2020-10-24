@@ -40,3 +40,4 @@
   - [Scriptable](https://scriptable.app/) ***iOS***
 #### Here are some books to learn advanced Javascript
   - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/)
+  - JavaScript面向对象编程指南
