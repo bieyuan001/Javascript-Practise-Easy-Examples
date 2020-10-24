@@ -20,6 +20,7 @@
   - Mouse Change Opacity
   - Playing Progress
     - Progress Auto 100%
+  - Regular Expression Reference
   - Select Friends List
   - Simple Calculators Numbers Sum
   - Slider Auto Show
