@@ -106,11 +106,23 @@ It can operate within a group, or on a whole expression. The patterns will be te
 </div>
 <div class="textstyle">
 	<p>/(?:ha)+/g</p>
-	<p>Matches the results of a capture group. For example \1 matches the results of the first capture group & \3 matches the third.</p>
+	<p>Groups multiple tokens together without creating a capture group.</p>
 </div>
 <div class="textstyle">
 	<p>/(?!ha)+/g</p>
-	<p>Matches the results of a capture group. For example \1 matches the results of the first capture group & \3 matches the third.</p>
+	<p>Specifies a group that can not match after the main expression (if it matches, the result is discarded).</p>
+</div>
+<div class="textstyle">
+	<p>/\t/g</p>
+	<p>Matches a TAB character (char code 9).</p>
+</div>
+<div class="textstyle">
+	<p>/\r/g</p>
+	<p>Matches a CARRIAGE RETURN character (char code 13).</p>
+</div>
+<div class="textstyle">
+	<p>/\n/g</p>
+	<p>Matches a LINE FEED character (char code 10).</p>
 </div>
 <div class="retop">top</div>
 </body>
