@@ -18,12 +18,16 @@ function showSlides() {
 
 //Sovle 2
 
-var slides = document.querySelectorAll('.slider');
 var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2000);
+nextSlide();
 
 function nextSlide() {
-    slides[currentSlide].style.display = 'none';
-    currentSlide = (currentSlide+1)%slides.length;
+	var slides = document.querySelectorAll('.slider');
+	for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
     slides[currentSlide].style.display = 'block';
+    currentSlide = (currentSlide+1)%slides.length;
+    slides[currentSlide].style.display = 'none';
+	setTimeout(nextSlide, 2000);
 }
