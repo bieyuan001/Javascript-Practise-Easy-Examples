@@ -43,4 +43,5 @@
 #### Here are some books to learn advanced Javascript
   - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/)
   - [DOM Enlightenment](http://domenlightenment.com/)
+  - [Javascript Challenges](https://github.com/tcorral/javascript-challenges-book)
   - JavaScript面向对象编程指南
