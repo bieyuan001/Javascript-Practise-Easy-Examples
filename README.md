@@ -25,6 +25,7 @@
   - Simple Calculators Numbers Sum
   - Slider Auto Show
   - Slider Practise
+  - Tags Add Title
   - Toggle Tab
   - Toggle List
   - Word Counter and Change Random Colors
