@@ -5,6 +5,7 @@
   - [W3schools](https://www.w3schools.com/)
   - [W3school](https://www.w3school.com.cn/) ***Chinese Version***
   - [Javascript](https://www.javascript.com/)
+  - [JavaTpoint](https://www.javatpoint.com/)
   - [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   - [Runboo](https://www.runoob.com/) ***Chinese Version***
 #### Here are some examples to help you learn Javascript
