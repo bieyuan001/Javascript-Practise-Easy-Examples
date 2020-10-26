@@ -13,6 +13,7 @@
   - Back To Top
   - Change BackgroundColor One by One
   - Color RGB Picker
+  - Digital Clock
   - Fresh Change Background Random Colors
   - Message Emulator
   - How Long A Number Is
