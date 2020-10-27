@@ -11,6 +11,7 @@
 #### Here are some examples to help you learn Javascript
   - Canvas
     - Basic
+    - Click Change Color and Width
   - Dates
     - Digital Clock
     - How Many Days in This Month
