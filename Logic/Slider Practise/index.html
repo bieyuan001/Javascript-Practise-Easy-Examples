@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Slider Practise</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      width: 100%;
+    }
+    #container div {
+      width: 200px;
+      background: #eee;
+      position: absolute;
+      left: -340px;
+	  height:90px;
+	  top:-10px;
+	  display:inline-block;
+    }
+
+    button {
+	  color: #ffffff;
+      width: 40px;
+      height: 90px;
+      background: #ff8800;
+	  opacity:60%;
+      margin: 0;
+      position: relative;
+    }
+	button:hover{
+	  opacity:100%;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div id="content">You can learn how to code slider from this example</div>
+      <button id="btn">Click Me!!</button>
+    </div>
+    <script>
+      const btn = document.getElementById('btn');
+      const content = document.getElementById('content');
+      var i = 0;
+      btn.addEventListener('click', () => {
+        if (i === 0) {
+          content.style.left = 0;
+          content.style.position = 'relative';
+          i++;
+        } else {
+          content.style.left = -340 + 'px';
+          content.style.position = 'absolute';
+          i--;
+        }
+      });
+    </script>
+  </body>
+</html>

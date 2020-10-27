@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+}
+
+.textstyle{
+	width:100%;
+	margin:0;
+	top: 20px;
+}/* CSS Document */
+
+.textstyle h1{
+	margin-top:20px;
+	text-align:center;
+}
+
+.textstyle p{
+	margin-top:20px;
+	padding-left:20px;
+	color: red;
+	background:#eeeeee;
+	padding-top:20px;
+	height:40px;
+}
+
+p:last-child {
+    color: lime;
+    background-color: black;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.retop {
+	color:#fff;
+	background-color:#ff8800;
+	font-size:36px;
+	position:fixed;
+	bottom:30px;
+	right:20px;
+	width:60px;
+	height:60px;
+	z-index:999;
+	text-align:center;
+	padding-top:8px;
+	cursor:pointer;
+	display:none;
+}
