@@ -6,19 +6,6 @@
 </head>
 <body>
 <canvas id="myCon" width="200px" height="100px" style="border:1px solid #000000"></canvas>
-<script>
-var canvas = document.getElementById("myCon");
-var ctx = canvas.getContext("2d");
-ctx.fillStyle = "#FF0000";
-ctx.fillRect(0,0,200,100);
-canvas.onclick = function(){
-	this.style.width = "300px";
-	this.style.height = "100px";
-	ctx.fillStyle = "#ffffff";
-	ctx.fillRect(0,0,200,100);
-	ctx.fillStyle = "#ffee00";
-	ctx.fillRect(0,0,100,100);
-}
-</script>
+<script src="js/Javascript.js"></script>
 </body>
 </html>
