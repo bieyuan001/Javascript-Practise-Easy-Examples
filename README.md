@@ -12,6 +12,7 @@
   - Canvas
     - Basic
     - Click Change Color and Width
+    - Libraries
   - Dates
     - Digital Clock
     - How Many Days in This Month
