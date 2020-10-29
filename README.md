@@ -41,6 +41,7 @@
     - Slider Auto Show
   - Numbers
     - Color RGB Picker
+    - Daily A Random Word
     - How Long A Number Is
     - Fresh Change Background Random Colors
     - Word Counter and Change Random Colors
