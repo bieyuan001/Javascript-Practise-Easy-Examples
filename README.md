@@ -62,4 +62,5 @@
   - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/)
   - [DOM Enlightenment](http://domenlightenment.com/)
   - [Javascript Challenges](https://github.com/tcorral/javascript-challenges-book)
+  - [Eloquent JavaScript](https://eloquentjavascript.net/)
   - JavaScript面向对象编程指南
