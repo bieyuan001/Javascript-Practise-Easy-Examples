@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Daily A Random Word</title>
+</head>
+
+<body>
+	<div id="sword"></div>
+<script>
+window.onload = function(){
+	var getSword = document.getElementById("sword");
+	var arr = ["a","b","c","d"];
+	var num = Math.round(Math.random()*(arr.length-1));
+	getSword.innerHTML = arr[num];
+}
+</script>
+</body>
+</html>
