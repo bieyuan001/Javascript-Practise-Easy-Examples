@@ -11,7 +11,7 @@ var canvas = document.getElementById("myCon");
 var ctx = canvas.getContext("2d");
 ctx.fillStyle = "#FF0000";
 ctx.fillRect(0,0,200,100);
-canvas.onclick = function(){
+canvas.onmouseover = function(){
 	"use strict"
 	ctx.fillStyle = "#ffee00";
 	ctx.strokeStyle = "#000000";
@@ -23,4 +23,14 @@ canvas.onclick = function(){
 	ctx.fillRect(75,25,50,50);
 	ctx.lineWidth = 5;
 	ctx.strokeRect(75,25,50,50)
+}
+canvas.onmouseout = function(){
+	"use strict"
+	ctx.beginPath();
+	ctx.moveTo(0,0);
+	ctx.lineTo(20,80);
+	ctx.lineTo(70,80);
+	ctx.closePath();
+	ctx.fillStyle="#00ff00";
+	ctx.fill();
 }
