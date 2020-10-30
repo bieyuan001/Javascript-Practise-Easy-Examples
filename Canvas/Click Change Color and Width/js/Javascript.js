@@ -1,9 +1,6 @@
-//createPattern
-//Path: clip, quadraticCurveto, bezierCurveTo, arcTo, isPointInPath
+//Path: bezierCurveTo, arcTo, isPointInPath
 //transform, setTransform
-//Text: font, fontAlign, textBaseline, fillText, strokeText, measureText
-//Image: drawImage
-//width, height, date, creatImageDate, getImageDate, putImageDate, globalCompositeOperation
+//width, height, date, creatImageDate, getImageDate, putImageDate
 var canvas = document.getElementById("myCon");
 var ctx = canvas.getContext("2d");
 ctx.fillStyle = "#FF0000";
@@ -16,6 +13,7 @@ canvas.onmouseover = function(){
 	ctx.shadowColor = "#000000";
 	ctx.shadowOffsetX = 10;
 	ctx.shadowOffsetY = 10;
+	ctx.globalCompositeOperation='destination-out';//source-over, source-atop, source-in, source-out, destination-out, destination-in, destination-over, destination-atop, lighter, copy, oxr
 	ctx.rotate(30*Math.PI/180);
 	ctx.scale(1.5,1.5);
 	ctx.globalAlpha = 0.2; //Looks like opacity
@@ -48,8 +46,6 @@ getcols.addColorStop(1,"blue");
 ctx2.globalAlpha = 0.6;
 ctx2.fillStyle = getcols;
 ctx2.fillRect(0,0,80,99);
-ctx2.tanslate(40,40);
-ctx2.fillRect(0,0,60,100)
 
 var canvas3 = document.getElementById("myLine");
 var ctx3 = canvas3.getContext("2d");
@@ -67,3 +63,25 @@ ctx3.lineTo(100,65);
 ctx3.lineTo(60,90);
 ctx3.lineWidth = 4;
 ctx3.stroke();
+
+var canva4 = document.getElementById("myImage");
+var ctx4 = canva4.getContext("2d");
+var im = document.getElementById("toMine")
+var getImage = ctx4.createPattern(im,"repeat");//includes repeat, repeat-x, repeat-y, no-repeat
+ctx4.fillStyle = getImage;
+ctx4.fillRect(0,0,200,100);
+
+var canva5 = document.getElementById("myText");
+var ctx5 = canva5.getContext("2d");
+ctx5.globalAlpha = 0.4;
+ctx5.font = "oblique small-caps 900 30px Microsoft Yahei";//property includes oblique/italic/normal, normal/small-caps, normal/bold/bolder/lighter/100/200/300/400/500/600/700/800/900
+ctx5.fillText("Hello World",10,50);
+ctx5.font = "30px Microsoft Yahei";
+ctx5.strokeText("I love you", 30, 80);
+
+var canva6 = document.getElementById("quadratic");
+var ctx6 = canva6.getContext("2d");
+ctx6.beginPath();
+ctx6.moveTo(20,20);
+ctx6.bezierCurveTo(20, 60, 60, 60, 120, 20);
+ctx.stroke();
