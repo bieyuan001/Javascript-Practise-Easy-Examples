@@ -12,6 +12,7 @@
   - Canvas
     - Basic
     - Click Change Color and Width
+    - Function Draw Rectangle
     - Libraries
   - Dates
     - Digital Clock
