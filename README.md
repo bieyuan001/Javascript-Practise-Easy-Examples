@@ -60,7 +60,7 @@
   - [JSBox](https://apps.apple.com/us/app/id1312014438) ***iOS***
   - [Scriptable](https://scriptable.app/) ***iOS***
 #### Here are some books to learn advanced Javascript
-  - [Canvas：Draw on the Web](https://github.com/airingursb/canvas)
+  - [Canvas：Draw on the Web](https://github.com/airingursb/canvas) ***Chinese Version***
   - [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/)
   - [DOM Enlightenment](http://domenlightenment.com/)
   - [Javascript Challenges](https://github.com/tcorral/javascript-challenges-book)
