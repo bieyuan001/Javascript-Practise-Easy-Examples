@@ -25,6 +25,8 @@
     - Playing Progress
     - Progress Auto 100%
     - Select Friends List
+  - jQuery
+    - Menu
   - Logic
     - Back To Top
     - Change BackgroundColor One by One
