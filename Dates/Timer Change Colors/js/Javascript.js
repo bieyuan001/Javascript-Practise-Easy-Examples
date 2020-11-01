@@ -1,3 +1,5 @@
+//Javascript
+/*
 window.onload = function(){
 	document.getElementById("timer").innerHTML = new Date().toTimeString().slice(0,8);
 	var a = setInterval(myFunction,1000);
@@ -13,4 +15,21 @@ window.onload = function(){
 	window.onclick = function(){
 			clearInterval(a);
 	}
-}// JavaScript Document
+}
+*/
+
+//jQuery
+var s = setInterval(myFunction,1000);
+function myFunction(){
+	var c = new Date().toTimeString().slice(0,8);
+	var r = Math.round(Math.random()*255).toString(16);
+	var g = Math.round(Math.random()*255).toString(16);
+	var b = Math.round(Math.random()*255).toString(16);
+	$("#timer").text(c);
+	$("#timer").css({color: "#"+r+g+b});
+}
+$("document").ready(function(){
+	$("#timer").click(function(){
+		clearInterval(s);
+	})
+})
