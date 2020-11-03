@@ -1,4 +1,4 @@
-//Sovle 1
+//Javascript 1
 /*
 var slideIndex = 0;
 showSlides();
@@ -16,8 +16,7 @@ function showSlides() {
 }
 */
 
-//Sovle 2
-
+//Javascript 2
 var currentSlide = 0;
 nextSlide();
 
