@@ -1,0 +1,30 @@
+ * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      width: 100%;
+    }
+    #container div {
+      width: 200px;
+      background: #eee;
+      /*position: absolute;
+      left: -340px;
+	  top:-10px;javascript*/
+	  height:90px;
+	  display:inline-block;
+    }
+
+    button {
+	  color: #ffffff;
+      width: 40px;
+      height: 90px;
+      background: #ff8800;
+	  opacity:60%;
+      margin: 0;
+      /*position: relative;javascript*/
+    }
+	button:hover{
+	  opacity:100%;
+    }
