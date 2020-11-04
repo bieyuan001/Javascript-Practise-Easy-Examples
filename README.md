@@ -28,6 +28,7 @@
     - Select Friends List
   - jQuery
     - Menu
+    - Selectors Practise
   - Logic
     - Back To Top
     - Change BackgroundColor One by One
@@ -69,4 +70,5 @@
   - [DOM Enlightenment](http://domenlightenment.com/)
   - [Javascript Challenges](https://github.com/tcorral/javascript-challenges-book)
   - [Eloquent JavaScript](https://eloquentjavascript.net/)
+  - [jQuery Enlightenment](http://www.codylindley.com/jquery_enlightenment.pdf)
   - JavaScript面向对象编程指南
