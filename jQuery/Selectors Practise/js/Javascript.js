@@ -1,6 +1,8 @@
 $(document).ready(function(){
-	$("*").css({color:"red"});// All Elements
-	$("#fullElement").click(function(){
+	$("*").click(function(){
+		$(this).css({color:"blue"});
+	});
+	$("#textstyle1").click(function(){
 		$(this).hide();
 	});//id selector
 	$(".secondElement").click(function(){

@@ -1,24 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>jQuery Selectors Practise</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="utf-8" />
+<title>Selectors Practise</title>
+<link rel="stylesheet" href="css/main.css">
+<script src="js/jquery-3.5.1.min.js"></script>
 </head>
-
 <body>
-<div id="fullElement">
-<p>Hello World!</p>
+<h1>Selectors Practise</h1>
+<div class="textstyle">
+	<p>$("*")</p>
+	<p>Select All Elements</p>
 </div>
-<div>
-<p class="secondElement">Hello you!</p>
-<span>Hello her!</span>
-<span>Hello his!</span>
-<span>Hello boy!</span>
+<div id="textstyle1">
+	<p>$("#id")</p>
+	<p>Select Id Elements</p>
 </div>
-<div>
-<span>Hello girl!</span>
-<p class="thirdElement">Hello you!</p>
+<div class="textstyle">
+	<p>/*regular expression*/m</p>
+	<p>When the multiline flag is enabled, beginning and end anchors (^ and $) will match the start and end of a line, instead of the start and end of the whole string.</p>
+</div>
+<div class="textstyle">
+	<p>/*regular expression*/gim</p>
+	<p>/*regular expression*/gi, /*regular expression*/gm, /*regular expression*/im</p>
+</div>
+<div class="textstyle">
+	<p>/[A-Z]/g</p>
+	<p>Matches a character having a character code between the two specified characters inclusive.</p>
+</div>
+<div class="textstyle">
+	<p>/./g</p>
+	<p>Matches any character except linebreaks.</p>
+</div>
+<div class="textstyle">
+	<p>/\w/g</p>
+	<p>Matches any word character (alphanumeric &amp; underscore). Only matches low-ascii characters (no accented or non-roman characters). Equivalent to [A-Za-z0-9_]</p>
+</div>
+<div class="textstyle">
+    <p>/\W/g</p>
+	<p>Matches any character that is not a word character (alphanumeric &amp; underscore). Equivalent to [^A-Za-z0-9_]</p>
+</div>
+<div class="textstyle">
+	<p>/\d/g</p>
+	<p>Matches any digit character (0-9). Equivalent to [0-9].</p>
+</div>
+<div class="textstyle">
+    <p>/\D/g</p>
+	<p>Matches any character that is not a digit character (0-9). Equivalent to [^0-9]</p>
+</div>
+<div class="textstyle">
+	<p>/\s/g</p>
+	<p>Matches any whitespace character (spaces, tabs, line breaks).</p>
+</div>
+<div class="textstyle">
+    <p>/\S/g</p>
+	<p>Matches any character that is not a whitespace character (spaces, tabs, line breaks).</p>
+</div>
+<div class="textstyle">
+	<p>/b(a|e|i)d/g</p>
+	<p>Acts like a boolean OR. Matches the expression before or after the |.
+It can operate within a group, or on a whole expression. The patterns will be tested in order.</p>
+</div>
+<div class="textstyle">
+    <p>/[^a]/g</p>
+	<p>Match any character that is not in the set.</p>
+</div>
+<div class="textstyle">
+    <p>/^[a]/g</p>
+	<p>Matches the beginning of the string, or the beginning of a line if the multiline flag (m) is enabled. This matches a position, not a character.</p>
+</div>
+<div class="textstyle">
+	<p>/[e]$/g</p>
+	<p>$: Matches the end of the string, or the end of a line if the multiline flag (m) is enabled. This matches a position, not a character.</p>
+</div>
+<div class="textstyle">
+	<p>/\0/g</p>
+	<p>Matches a NULL character (char code 0).</p>
+</div>
+<div class="textstyle">
+	<p>/*/g</p>
+	<p>Matches 0 or more of the preceding token.</p>
+</div>
+<div class="textstyle">
+	<p>/?/g</p>
+	<p>Matches 0 or 1 of the preceding token, effectively making it optional. Example: /JavaS?cript/gi =&gt; Javascript or Javacript</p>
+</div>
+<div class="textstyle">
+	<p>/\w{1,3}/g</p>
+	<p>Matches the specified quantity of the previous token. {1,3} will match 1 to 3. {3} will match exactly 3. {3,} will match 3 or more.</p>
+</div>
+<div class="textstyle">
+	<p>/\b/g</p>
+	<p>Matches a word boundary position between a word character and non-word character or position (start / end of string). See the word character class (w) for more info.</p>
+</div>
+<div class="textstyle">
+	<p>/\B/g</p>
+	<p>Matches any position that is not a word boundary. This matches a position, not a character.</p>
+</div>
+<div class="textstyle">
+	<p>/(abc)/g</p>
+	<p>Groups multiple tokens together and creates a capture group for extracting a substring or using a backreference.</p>
+</div>
+<div class="textstyle">
+	<p>/(abc)\1/g</p>
+	<p>Matches the results of a capture group. For example \1 matches the results of the first capture group &amp; \3 matches the third.</p>    
+</div>
+<div class="textstyle">
+	<p>/(?:ha)+/g</p>
+	<p>Groups multiple tokens together without creating a capture group.</p>
+</div>
+<div class="textstyle">
+	<p>/(?!ha)+/g</p>
+	<p>Specifies a group that can not match after the main expression (if it matches, the result is discarded).</p>
+</div>
+<div class="textstyle">
+	<p>/\t/g</p>
+	<p>Matches a TAB character (char code 9).</p>
+</div>
+<div class="textstyle">
+	<p>/\r/g</p>
+	<p>Matches a CARRIAGE RETURN character (char code 13).</p>
+</div>
+<div class="textstyle">
+	<p>/\n/g</p>
+	<p>Matches a LINE FEED character (char code 10).</p>
 </div>
 <script src="js/Javascript.js"></script>
 </body>
