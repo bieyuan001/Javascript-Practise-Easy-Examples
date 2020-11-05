@@ -1,32 +1,33 @@
 $(document).ready(function(){
 	$("*").click(function(){
-		$(this).css({color:"blue"});
+		$(this).animate({fontSize:"16px"},3000);
 	});
 	$("#textstyle1").click(function(){
-		$(this).hide();
-	});//id selector
-	$(".secondElement").click(function(){
-		$(this).fadeToggle(1500);
-	});//class selector
-	$("span").click(function(){
-		$(this).hide(1500);
-	});//element selector
-	$("span:first").click(function(){
-		$(this).show(1500);
-	});//element first selector
+		$(this).hide().show(1000);
+	});
+	$(".textstyle2").click(function(){
+		$(this).animate({fontWeight:"800"},3000);
+	});
+	$("h1").click(function(){
+		$(this).hide(1500).show(1500);
+	});
+	$("h1:first").click(function(){
+		$(this).animate({fontSize:"32px"},3000);
+	});
 	$("span:last").click(function(){
-		$(this).show(1500).css({color:"blue"});
-	});//element last selector
+		$(this).fadeOut(1500).fadeIn(1500).css({color:"orange"});
+	});
 	$("span:even").click(function(){
-		$(this).css({fontSize:"26px"});
-	});//element even selector
-	$("span:odd").click(function(){
-		$(this).show(1500).css({fontSize:"4px"});
-	});//element odd selector
-	$("div:first-child").click(function(){
-		$(this).show(1500).css({fontSize:"4px"});
-	});//element div first child p selector
-	$("p:first-of-type").click(function(){
-		$(this).css({backgroundColor:"blue"});
+		$(this).slideUp(1500).slideDown(1500).css({color:"red"});
+	});
+	$("span:odd").mouseover(function(){
+		$(this).css({color:"green"});
+	});
+	$("span:first-child").mouseenter(function(){
+		$(this).css({fontStyle:"italic"});
+	});
+	$("span:last-child").click(function(){
+		$(this).animate({marginLeft:"40px"},200);
+		$(this).animate({marginLeft:"0px"},200);
 	});
 })

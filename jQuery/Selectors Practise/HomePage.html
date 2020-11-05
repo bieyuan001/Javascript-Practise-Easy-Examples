@@ -7,46 +7,46 @@
 <script src="js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
-<h1>Selectors Practise</h1>
+<h1>Selectors Practise (All Can Click Show Effects)</h1>
 <div class="textstyle">
 	<p>$("*")</p>
-	<p>Select All Elements</p>
+	<p>Select All Elements; Example: $("*")</p>
 </div>
 <div id="textstyle1">
 	<p>$("#id")</p>
-	<p>Select Id Elements</p>
+	<p>Select Id Elements; Example: $("#textstyle1")</p>
+</div>
+<div class="textstyle2">
+	<p>$(".class")</p>
+	<p>Select Class Elements; Example: $(".class")</p>
 </div>
 <div class="textstyle">
-	<p>/*regular expression*/m</p>
-	<p>When the multiline flag is enabled, beginning and end anchors (^ and $) will match the start and end of a line, instead of the start and end of the whole string.</p>
+	<p>$("element")</p>
+	<p>Select Elements; Example: $("h1")</p>
 </div>
 <div class="textstyle">
-	<p>/*regular expression*/gim</p>
-	<p>/*regular expression*/gi, /*regular expression*/gm, /*regular expression*/im</p>
+	<p>$(":first")</p>
+	<p>Select Elements first Element; Example: $("h1:first")</p>
 </div>
 <div class="textstyle">
-	<p>/[A-Z]/g</p>
-	<p>Matches a character having a character code between the two specified characters inclusive.</p>
+	<p>$(":last")</p>
+	<p>Select Elements last Element; <span>Example: $("span:last")</span></p>
 </div>
 <div class="textstyle">
-	<p>/./g</p>
-	<p>Matches any character except linebreaks.</p>
+	<p>$(":even")</p>
+	<p>Select Elements even Element; <span>Example: $("span:even")</span></p>
 </div>
 <div class="textstyle">
-	<p>/\w/g</p>
-	<p>Matches any word character (alphanumeric &amp; underscore). Only matches low-ascii characters (no accented or non-roman characters). Equivalent to [A-Za-z0-9_]</p>
+    <p>$(":odd")</p>
+	<p>Select Elements even Element; <span>Example: $("span:odd")</span></p>
 </div>
 <div class="textstyle">
-    <p>/\W/g</p>
-	<p>Matches any character that is not a word character (alphanumeric &amp; underscore). Equivalent to [^A-Za-z0-9_]</p>
+	<p>$(":first-child")</p>
+	<p>All elements that are the first child of their parent; Example: <span>$("span:first-child")</span></p>
 </div>
 <div class="textstyle">
-	<p>/\d/g</p>
-	<p>Matches any digit character (0-9). Equivalent to [0-9].</p>
-</div>
-<div class="textstyle">
-    <p>/\D/g</p>
-	<p>Matches any character that is not a digit character (0-9). Equivalent to [^0-9]</p>
+    <p>$(":last-child")</p>
+	<p>All elements that are the last child of their parent; Example: <span>$("span:last-child")</span></p>
 </div>
 <div class="textstyle">
 	<p>/\s/g</p>

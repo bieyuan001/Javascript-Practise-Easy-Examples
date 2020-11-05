@@ -45,6 +45,21 @@ h1{
 	height:40px;
 }
 
+.textstyle2{
+	width:100%;
+	margin:0;
+	top: 20px;
+}/* CSS Document */
+
+.textstyle2 p{
+	margin-top:20px;
+	padding-left:20px;
+	color: red;
+	background:#eeeeee;
+	padding-top:20px;
+	height:40px;
+}
+
 p:last-child {
     color: lime;
     background-color: black;
