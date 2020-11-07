@@ -29,6 +29,7 @@
   - jQuery
     - Menu
     - Selectors Practise
+    - Search Tab
   - Logic
     - Back To Top
     - Change BackgroundColor One by One
