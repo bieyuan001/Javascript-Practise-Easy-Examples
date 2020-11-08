@@ -28,6 +28,7 @@
     - Select Friends List
   - jQuery
     - Menu
+    - Pull Push Bar
     - Selectors Practise
     - Search Tab
   - Logic
