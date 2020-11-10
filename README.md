@@ -18,6 +18,8 @@
     - Digital Clock
     - How Many Days in This Month
     - Time Change Colors
+  - Demo
+    - The Code Map
   - DOM
     - Creat New Nodes
     - Tags Add Title
@@ -28,7 +30,6 @@
     - Select Friends List
   - jQuery
     - Menu
-    - Pull Push Bar
     - Selectors Practise
     - Search Tab
   - Logic
