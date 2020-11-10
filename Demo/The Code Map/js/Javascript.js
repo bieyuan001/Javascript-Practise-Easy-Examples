@@ -29,6 +29,7 @@ $(document).ready(function(){
 			$(".menu-top5").hide();
 			$(".menu-top1").css({marginLeft:0});
 			$(".menu-top1").slideToggle(500);
+			$(".solid-bar").toggle();
 			$(".second-button").toggle(500);
 			$(".third-button").toggle(600);
 			$(".fourth-button").toggle(700);
@@ -107,6 +108,20 @@ $(document).ready(function(){
 			$(".menu-top3").hide();
 			$(".menu-top4").hide();
 			$(".menu-top5").show();
-		},
+		}
 	})
+	function changeTime(){
+			var a = new Date().toLocaleString()
+			$(".solid-bar span:eq(0)").text(a);
+			setTimeout(changeTime,1000);
+	}
+	changeTime();
+		for(var i=0; i<22;i++){
+			if($(".code-list li:eq(21)").offset().left>=1057){
+				$(".code-list li:eq(0)").hide();
+			}else{
+				$(".code-list li:eq(i)").show();
+			}
+		}
 })
+
