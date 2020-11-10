@@ -118,11 +118,16 @@
 }
 .solid-bar ul {
     margin:0;
+	width:100%;
+	display:contents;
 }
 .solid-bar ul>li {
     display: inline-block;
     padding-left: 0.5em;
     font-size: 0.6em;
+}
+.msolid-bar {
+	opacity:0;
 }
 /* pad css */
 @media screen and (max-width:960px) {
@@ -147,5 +152,8 @@
     }
 	.solid-bar{
     	opacity:0;
+	}
+	.msolid-bar{
+    	opacity:1;
 	}
 }
