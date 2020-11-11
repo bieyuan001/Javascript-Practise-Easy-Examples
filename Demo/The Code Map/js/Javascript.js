@@ -31,14 +31,21 @@ $(document).ready(function(){
 			$(".menu-top1").css({marginLeft:0});
 			$(".menu-top1").slideToggle(500);
 			$(".solid-bar").toggle();
+			if($(window).width()<=640){
+				$(".solid-bar").hide();
+				$(".msolid-bar").fadeToggle(500);
+			}
+			$(".top-banner").toggle();
+			$(".top-banner-button").toggle();
+			$(".middle-list").toggle();
 			$(".second-button").toggle(500);
 			$(".third-button").toggle(600);
 			$(".fourth-button").toggle(700);
 			$(".fifth-button").toggle(800);
-			if($(this).text()==="↓ Pull Down"){
-				$(this).text("↑ Push Up");
+			if($(this).text()==="↓ Pull"){
+				$(this).text("↑ Push");
 			}else{
-				$(this).text("↓ Pull Down");
+				$(this).text("↓ Pull");
 			}
 		}
 	})
@@ -145,11 +152,11 @@ ctx.lineTo(40,30);
 ctx.moveTo(20,40);
 ctx.lineTo(40,40);
 ctx.lineWidth = 2;
-ctx.strokeStyle = "#000000";
+ctx.strokeStyle = "#ffffff";
 ctx.closePath();
 ctx.stroke();
 	$("#retangle-menu").click(function(){
-		if(ctx.strokeStyle==="#000000"){
+		if(ctx.strokeStyle==="#ffffff"){
 			ctx.clearRect(0,0,60,60);
 			ctx.beginPath();
 			ctx.moveTo(20,20);
@@ -169,7 +176,7 @@ ctx.stroke();
 			ctx.moveTo(20,40);
 			ctx.lineTo(40,40);
 			ctx.lineWidth = 2;
-			ctx.strokeStyle = "#000000";
+			ctx.strokeStyle = "#ffffff";
 			ctx.closePath();
 			ctx.stroke();
 		}
