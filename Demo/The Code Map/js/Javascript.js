@@ -8,7 +8,7 @@ $(document).ready(function(){
 	$(".return-top-button").hide();
 //solid-bar z-index controll
 	$(document).mousemove(function(event){var x = event.pageX;
-		if(x>=1024){
+		if(x>=$(window).width()-$(".first-button").width()){
 			$(".solid-bar").css({zIndex:-999})
 		}else{
 			$(".solid-bar").css({zIndex:999})
