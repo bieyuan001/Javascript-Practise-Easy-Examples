@@ -47,6 +47,7 @@ $(document).ready(function(){
 			$(".top-banner").toggle();
 			$(".top-banner-button").toggle();
 			$(".middle-list").toggle();
+			$(".useful-links").toggle();
 			$(".return-top-button").toggle(400);
 			$(".second-button").toggle(500);
 			$(".third-button").toggle(600);
