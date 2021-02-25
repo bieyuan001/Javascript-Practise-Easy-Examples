@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="description" content="Loginpanel">
+    <meta name="author" content="Someone">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="js/code.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <style>
+        body {
+            overflow: hidden;
+            background-image: url(bg.png);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-login">
+        <div id="title">
+            <img src="logo.png" width=80 height=64 /><span>A Test Form</span>
+        </div>
+
+        <form>
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input id="username" placeholder="Login User" type="text" required class="validate" autocomplete="off">
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input id="password" placeholder="Login Password" type="password" required class="validate" autocomplete="off">
+            </div>
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">check</i>
+                </div>
+                <input id="vertif" placeholder="Verification Code" type="text" required class="validate" autocomplete="off">
+            </div>
+            <div class="shownum">
+                <input type = "button" id="code" onclick="createCode()"/> 
+            </div>
+            <div class="remember-me">
+                <input type="checkbox">
+                <span style="color: #DDD">remember-me</span>
+            </div>
+
+            <input type="submit" value="Login" onclick="validate()"/>
+        </form>
+    </div>
+    <footer>
+        <p>Copyright 2021 Luckydesigner.space</p>
+    </footer>
+    <script type="text/javascript" src="js/javascript.js"></script>
+</body>
+
+</html>

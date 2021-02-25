@@ -26,6 +26,8 @@
     - Playing Progress
     - Progress Auto 100%
     - Select Friends List
+  - Form
+    - Verification Code
   - jQuery
     - Menu
     - Selectors Practise
