@@ -9,6 +9,8 @@
   - [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   - [Runboo](https://www.runoob.com/) ***Chinese Version***
 #### Here are some examples to help you learn Javascript
+  - API
+    - Weather
   - Canvas
     - Basic
     - Click Change Color and Width
