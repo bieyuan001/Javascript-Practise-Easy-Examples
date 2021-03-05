@@ -25,6 +25,8 @@
   - DOM
     - Creat New Nodes
     - Tags Add Title
+  - Echarts
+    - Echarts Bar
   - Events
     - Input Text and Return
     - Playing Progress
