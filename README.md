@@ -10,6 +10,7 @@
   - [Runboo](https://www.runoob.com/) ***Chinese Version***
 #### Here are some examples to help you learn Javascript
   - API
+    - Full Screen
     - Weather
     - Get Pixivweb Pictures
   - Canvas
