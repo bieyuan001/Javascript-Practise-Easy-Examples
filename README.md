@@ -39,6 +39,7 @@
     - Menu
     - Selectors Practise
     - Search Tab
+    - Simple Drag
   - Logic
     - Back To Top
     - Change BackgroundColor One by One
