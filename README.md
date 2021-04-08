@@ -18,6 +18,8 @@
     - Click Change Color and Width
     - Function Draw Rectangle
     - Libraries
+  - D3js
+    - Trees
   - Dates
     - Digital Clock
     - How Many Days in This Month
