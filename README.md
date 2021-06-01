@@ -11,8 +11,9 @@
 #### Here are some examples to help you learn Javascript
   - API
     - Full Screen
-    - Weather
     - Get Pixivweb Pictures
+	- Receive Equipment
+	- Weather
   - Canvas
     - Basic
     - Click Change Color and Width

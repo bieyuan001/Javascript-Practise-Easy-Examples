@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Receive Messages</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="jquery-ui.js"></script>
+    <link href="jquery-ui.css" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+                $("#leftBanner").resizable({
+                    minWidth: 400
+                });
+                makeAjaxCall();
+                $("#rightTop input").eq(1).click(function() {
+                    $(this).prop('disabled', true);
+                    let tcode = $("#rightTop p span").text();
+                    getLink(tcode);
+                });
+                $("#rightTop input").eq(0).click(function() {
+                    $("#rightTop input").eq(1).prop('disabled', false);
+                    let tcode = $("#messageBox p span:last").prev().text();
+                    console.log(tcode);
+                    breakLink(tcode);
+                });
+                window.setInterval(function() {
+                    makeAjaxCall();
+                }, 10000);
+            });
+        function makeAjaxCall() {
+            $.ajax({
+                url: '',
+                success: function(data) {
+		    $(".number ul").empty();
+                    $(".content ul").empty();
+                    let parse = data[0].msg.split(",")
+		    let arr = ["END"," "]
+                    let len = parse.length
+                    $(".content h4 span").text(len)
+                    for (let i in parse.concat(arr)) {
+                        $(".number ul").append(`<li>${Number(i)+1}</li>`)
+                        $(".content ul").append(`<li>${parse.concat(arr)[i]}</li>`)
+                    }
+                    $(".content ul li").click(function() {
+                        $("#rightTop p span").text($(this).text());
+                    })
+                },
+                error: function(xhr, error) {
+                    alert('No links!');
+                }
+            });
+        };
+        function getLink(tcode) {
+            $.ajax({
+                url: ``,
+                type: "GET",
+                success: function(data) {
+                    timer = new Date().toISOString().slice(0, 10) + new Date().toString().slice(15, 24)
+                    if (data[0].msg == "1000") {
+                        $("#messageBox").append(`<p>${timer}&nbsp;&nbsp;<span>${tcode}</span><span>Succeed</span></p>`)
+                    } else(
+                        $("#messageBox").append(`<p>${timer}&nbsp;&nbsp;<span>${tcode}</span><span>Failed</span></p>`)
+                    )
+
+                },
+                error: function(xhr, error) {
+                    alert('No links!');
+                }
+            });
+        }
+        //获取断开接口信息
+        function breakLink(tcode) {
+            $.ajax({
+                url: ``,
+                type: "GET",
+                success: function(data) {
+                    timer = new Date().toISOString().slice(0, 10) + new Date().toString().slice(15, 24)
+                    if (data[0].msg == "1000") {
+                        $("#messageBox").append(`<p>${timer}&nbsp;&nbsp;<span>${tcode}</span><span>Succeed</span></p>`)
+                    } else(
+                        $("#messageBox").append(`<p>${timer}&nbsp;&nbsp;<span>${tcode}</span><span>Failed</span></p>`)
+                    )
+
+                },
+                error: function(xhr, error) {
+                    alert('No links!');
+                }
+            });
+        }
+            let menuHeight = $('.leftContent');
+            let screenHeight = window.innerHeight;
+            menuHeight.style.height = screenHeight - 60 + "px";
+            $(".leftContent").css({ "overflow-y": "auto", "height": menuHeight });
+    </script>
+</head>
+<style>
+    body,
+    html {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    #main {
+        width: 100%;
+    }
+    
+    #leftBanner {
+        width: 400px;
+	height:auto;
+        position: absolute;
+        background-color: #fff;
+        border-right: 1px solid black;
+        z-index: 10;
+    }
+    
+    #rightBanner {
+        width: 100%;
+        height: 100vh;
+        left: 200px;
+        position: absolute;
+        z-index: 9;
+    }
+    
+    #top {
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        padding-top: 20px;
+        text-align: center;
+        background-color: #3a6da0;
+    }
+    
+    #rightTop {
+        background-color: #fff;
+        height: 43px;
+        border-bottom: 1px solid #3a6da0;
+    }
+    
+    #rightTop p {
+        position: relative;
+        left: 240px;
+        font-weight: bold;
+        font-size: 16px;
+        top: 3px;
+    }
+    
+    #messageBox {
+        position: absolute;
+        width: 70%;
+        height: 70%;
+        left: 10%;
+        right: 10%;
+        top: 150px;
+        bottom: 200px;
+        margin: 0 auto;
+        border: 1px solid #000;
+        overflow: auto;
+    }
+    
+    #messageBox p {
+        padding-left: 20px;
+        line-height: 20px;
+    }
+    
+    input[type="button"] {
+        position: relative;
+        float: right;
+        width: 100px;
+        height: 30px;
+        right: 220px;
+        bottom: 40px;
+        font-family: 'Oswald';
+        margin-left: 5px;
+        background-color: #ccc;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    
+    input[type="button"]:hover {
+        background-color: #3a6da0;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .leftContent {
+        float: left;
+        width: 100%;
+        display: inline-flex;
+        overflow-y: auto;
+    	overflow-x: hidden;
+        border-top: 1px solid #000;
+	height: 100vh;
+    }
+    
+    .number {
+        width: 50px;
+        text-align: center;
+        padding: 1px;
+        vertical-align: middle;
+    }
+    
+    .number h4 {
+        width: 50px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #000;
+    }
+    
+    .number ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .number ul li {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px dotted #000;
+    }
+    
+    .content {
+        width: 100%;
+        text-align: center;
+        padding: 1px;
+    }
+    
+    .content h4 {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #000;
+    }
+    
+    .content ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .content ul li {
+        margin-bottom: 15px;
+        white-space: nowrap;
+        padding-bottom: 15px;
+        border-bottom: 1px dotted #000
+    }
+    
+    .content ul li:hover {
+        cursor: pointer;
+        color: #3a6da0;
+    }
+    
+    .searchbar {
+        text-align: center;
+        height: 40px;
+        padding-top: 20px;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <div id="rightBanner">
+            <div id="rightTop">
+                <p style="color:#000">Name:&nbsp;&nbsp;<span></span></p>
+                <input type="button" value="Offline">
+                <input type="button" value="Online">
+            </div>
+            <div id="messageBox">
+            </div>
+        </div>
+        <div id="leftBanner">
+            <h3 id="top">
+                List
+            </h3>
+            <div class="searchbar">
+                Search：<input type="text" id="search" onkeyup="search()">
+            </div>
+            <div class="leftContent">
+                <div class="number">
+                    <h4>Num</h4>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h4>Equipment(Total:<span></span>)</h4>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+	//Search Equipment Numbers
+        function search() {
+            var input = document.getElementById('search').value.toLowerCase();
+            var contacts = $('.content li');
+	    var make = $(".number li");
+            for (var i = 0; i < contacts.length; i++) {
+                if (contacts[i].innerText.toLowerCase().includes(input)) {
+                    contacts[i].style.display = "block";
+                    make[i].style.display = "block";
+                } else if (!contacts[i].innerText.toLowerCase().includes(input)) {
+                    contacts[i].style.display = "none";
+                    make[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
